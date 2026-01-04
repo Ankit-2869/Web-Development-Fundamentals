@@ -1,0 +1,27 @@
+<!-- 6. Write a program that greets the user based on the time of day.
+     Display Good Morning, Good Afternoon or Good Evening. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Greeting Based on Time</h3>
+    <button onclick="greet()">Greet Me</button>
+    <p id="result"></p>
+
+    <script>
+        function greet() {
+            var hour = new Date().getHours();
+            var msg;
+
+            if (hour < 12) {
+                msg = "Good Morning";
+            } else if (hour < 18) {
+                msg = "Good Afternoon";
+            } else {
+                msg = "Good Evening";
+            }
+
+            document.getElementById("result").innerHTML = msg;
+        }
+    </script>
+</body>
+</html>

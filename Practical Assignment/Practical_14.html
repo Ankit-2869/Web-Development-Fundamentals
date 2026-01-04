@@ -1,0 +1,23 @@
+<!-- 14. Array Iteration (for...of):
+     Iterate over an array of strings and print each element. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Array Iteration</h3>
+    <button onclick="showArray()">Show</button>
+    <p id="output"></p>
+
+    <script>
+        function showArray() {
+            var fruits = ["Apple", "Banana", "Mango", "Orange"];
+            var text = "";
+
+            for (var item of fruits) {
+                text += item + "<br>";
+            }
+
+            document.getElementById("output").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

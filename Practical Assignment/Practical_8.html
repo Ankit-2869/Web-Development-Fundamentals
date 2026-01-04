@@ -1,0 +1,29 @@
+<!-- 8. Write a simple number guessing game.
+     Give clues if guess is higher, lower or correct. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Number Guessing Game</h3>
+
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Check</button>
+
+    <p id="msg"></p>
+
+    <script>
+        var secret = 7;
+
+        function checkGuess() {
+            var g = Number(document.getElementById("guess").value);
+
+            if (g > secret) {
+                document.getElementById("msg").innerHTML = "Too High";
+            } else if (g < secret) {
+                document.getElementById("msg").innerHTML = "Too Low";
+            } else {
+                document.getElementById("msg").innerHTML = "Correct!";
+            }
+        }
+    </script>
+</body>
+</html>

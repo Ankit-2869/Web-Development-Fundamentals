@@ -1,0 +1,25 @@
+<!-- 17. Check for Palindrome Number
+     A palindrome number reads the same forwards and backwards.
+     Example: 121, 1331 -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Palindrome Number</h3>
+    <input type="number" id="val" placeholder="Enter number">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="ans"></p>
+
+    <script>
+        function checkPalindrome() {
+            var num = document.getElementById("val").value;
+            var rev = num.split("").reverse().join("");
+
+            if (num === rev) {
+                document.getElementById("ans").innerHTML = "Palindrome";
+            } else {
+                document.getElementById("ans").innerHTML = "Not Palindrome";
+            }
+        }
+    </script>
+</body>
+</html>

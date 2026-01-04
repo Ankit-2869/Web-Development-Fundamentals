@@ -1,0 +1,22 @@
+<!-- 10. Sort Three Numbers
+     Write a JavaScript conditional statement to sort three numbers. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Sort Three Numbers</h3>
+    <button onclick="sortNumbers()">Sort</button>
+
+    <script>
+        function sortNumbers() {
+            var a = 4, b = 0, c = -1;
+            var arr = [a, b, c];
+
+            arr.sort(function(x, y) {
+                return x - y;
+            });
+
+            alert("Sorted Order: " + arr.join(", "));
+        }
+    </script>
+</body>
+</html>

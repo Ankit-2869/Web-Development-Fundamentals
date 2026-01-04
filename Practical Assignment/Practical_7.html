@@ -1,0 +1,36 @@
+<!-- 7. Write a program that calculates the Body Mass Index (BMI)
+     and categorizes it using BMI = weight / (height * height). -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>BMI Calculator</h3>
+
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (m)">
+    <button onclick="calculateBMI()">Calculate</button>
+
+    <p id="output"></p>
+
+    <script>
+        function calculateBMI() {
+            var w = Number(document.getElementById("weight").value);
+            var h = Number(document.getElementById("height").value);
+            var bmi = w / (h * h);
+            var result;
+
+            if (bmi < 18.5) {
+                result = "Underweight";
+            } else if (bmi < 25) {
+                result = "Normal";
+            } else if (bmi < 30) {
+                result = "Overweight";
+            } else {
+                result = "Obese";
+            }
+
+            document.getElementById("output").innerHTML =
+                "BMI: " + bmi.toFixed(2) + " (" + result + ")";
+        }
+    </script>
+</body>
+</html>

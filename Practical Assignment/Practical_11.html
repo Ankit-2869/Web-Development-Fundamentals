@@ -1,0 +1,33 @@
+<!-- 11. FizzBuzz
+     Iterate from 1 to 100.
+     Multiples of 3 -> Fizz
+     Multiples of 5 -> Buzz
+     Multiples of both -> FizzBuzz -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>FizzBuzz</h3>
+    <button onclick="runFizzBuzz()">Run</button>
+    <p id="out"></p>
+
+    <script>
+        function runFizzBuzz() {
+            var text = "";
+
+            for (var i = 1; i <= 100; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    text += "FizzBuzz<br>";
+                } else if (i % 3 === 0) {
+                    text += "Fizz<br>";
+                } else if (i % 5 === 0) {
+                    text += "Buzz<br>";
+                } else {
+                    text += i + "<br>";
+                }
+            }
+
+            document.getElementById("out").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

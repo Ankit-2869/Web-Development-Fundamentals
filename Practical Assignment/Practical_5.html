@@ -1,0 +1,18 @@
+<!-- 5.	Positive, Negative, or Zero: Use the ternary operator to check if a number is positive, negative, or zero. -->
+ <!DOCTYPE html>
+<html>
+<body>
+    <h3>Check Sign</h3>
+    <input type="number" id="val" placeholder="Enter number">
+    <button onclick="check()">Check</button>
+    <p id="ans"></p>
+
+    <script>
+        function check() {
+            var x = Number(document.getElementById("val").value);
+            var res = (x > 0) ? "Positive" : (x < 0) ? "Negative" : "Zero";
+            document.getElementById("ans").innerHTML = res;
+        }
+    </script>
+</body>
+</html>

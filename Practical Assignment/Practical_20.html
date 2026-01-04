@@ -1,0 +1,33 @@
+<!-- 20. Checking Prime Numbers Using While Loop in JavaScript -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Prime Number Check</h3>
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="checkPrime()">Check</button>
+    <p id="ans"></p>
+
+    <script>
+        function checkPrime() {
+            var n = Number(document.getElementById("num").value);
+            var i = 2;
+            var flag = true;
+
+            if (n <= 1) {
+                flag = false;
+            }
+
+            while (i <= n / 2) {
+                if (n % i === 0) {
+                    flag = false;
+                    break;
+                }
+                i++;
+            }
+
+            document.getElementById("ans").innerHTML =
+                flag ? "Prime Number" : "Not a Prime Number";
+        }
+    </script>
+</body>
+</html>

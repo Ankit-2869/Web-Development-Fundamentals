@@ -1,0 +1,23 @@
+<!-- 19. JavaScript Program to Check Whether a Number is a Duck Number
+     Duck number contains digit '0' but not at the first position. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Duck Number Check</h3>
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="checkDuck()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkDuck() {
+            var num = document.getElementById("num").value;
+
+            if (num[0] !== "0" && num.includes("0")) {
+                document.getElementById("result").innerHTML = "Duck Number";
+            } else {
+                document.getElementById("result").innerHTML = "Not a Duck Number";
+            }
+        }
+    </script>
+</body>
+</html>

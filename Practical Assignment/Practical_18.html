@@ -1,0 +1,27 @@
+<!-- 18. JavaScript Program to Print the Fibonacci Sequence up to n terms. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Fibonacci Series</h3>
+    <input type="number" id="n" placeholder="Enter terms">
+    <button onclick="fibonacci()">Print</button>
+    <p id="output"></p>
+
+    <script>
+        function fibonacci() {
+            var n = Number(document.getElementById("n").value);
+            var a = 0, b = 1, c;
+            var text = a + " " + b + " ";
+
+            for (var i = 2; i < n; i++) {
+                c = a + b;
+                text += c + " ";
+                a = b;
+                b = c;
+            }
+
+            document.getElementById("output").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

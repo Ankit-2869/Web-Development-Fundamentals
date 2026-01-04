@@ -1,0 +1,24 @@
+<!-- 13. Factorial Calculation: Write a program to calculate the factorial
+     of a given number using a for loop. -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Factorial Calculator</h3>
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="factorial()">Calculate</button>
+    <p id="ans"></p>
+
+    <script>
+        function factorial() {
+            var n = Number(document.getElementById("num").value);
+            var fact = 1;
+
+            for (var i = 1; i <= n; i++) {
+                fact *= i;
+            }
+
+            document.getElementById("ans").innerHTML = "Factorial = " + fact;
+        }
+    </script>
+</body>
+</html>

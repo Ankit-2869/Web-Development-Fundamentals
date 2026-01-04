@@ -1,0 +1,23 @@
+<!-- 9. Sign of Product of Three Numbers
+     Sample numbers: 3, -7, 2
+     Output: The sign is - -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Sign of Product</h3>
+    <button onclick="checkSign()">Check Sign</button>
+
+    <script>
+        function checkSign() {
+            var a = 3, b = -7, c = 2;
+            var product = a * b * c;
+
+            if (product > 0) {
+                alert("The sign is +");
+            } else {
+                alert("The sign is -");
+            }
+        }
+    </script>
+</body>
+</html>
