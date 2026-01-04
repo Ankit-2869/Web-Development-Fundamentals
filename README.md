@@ -1,2 +1,10 @@
 # Web-Development-Fundamentals
-The repository belongs to Ankit kumar (RU-25-10211) which contains Practical and Projects of Web Tech. 
+This repository contains **Web Tech practical and mini-projects** completed as part of the *Web Development Fundamentals* course at RUNGTA INTERNATIONAL SKILLS UNIVERSITY.
+
+My Details:
+- **Name:** Ankit Kumar  
+- **ERP:** RU-25-10211  
+- **Section:** IBM A  
+
+- **Guided by:** prof. Rubi Kambo
+
