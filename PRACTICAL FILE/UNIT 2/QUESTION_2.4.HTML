@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Way Galaxy Planets</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            
+            background-image: url('https://www.shutterstock.com/image-vector/planets-solar-system-hand-drawn-260nw-1075223570.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #111;
+        }
+        .planet-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .planet-card {
+            background-color: white;
+            padding: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .planet-card h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px dashed #999;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .type-label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-top: 0.5rem;
+        }
+        @media (min-width: 600px) {
+            .planet-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .planet-card {
+                width: calc(50% - 0.5rem);
+            }
+        }
+        @media (min-width: 1024px) {
+            .planet-list {
+                gap: 1.5rem;
+            } 
+            .planet-card {
+                width: calc(33.333% - 1rem); 
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Planets of the Milky Way Galaxy</h1>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="planet-list">
+            
+            <li class="planet-card">
+                <h2>Mercury</h2>
+                <p>The smallest and innermost planet in the Solar System.</p>
+                <span class="type-label">Type: Terrestrial</span>
+            </li>
+            <li class="planet-card">
+                <h2>Venus</h2>
+                <p>The second planet from the Sun, known for its dense, toxic atmosphere.</p>
+                <span class="type-label">Type: Terrestrial</span>
+            </li>
+            <li class="planet-card">
+                <h2>Earth</h2>
+                <p>The only astronomical object where life is known to exist.</p>
+                <span class="type-label">Type: Terrestrial</span>
+            </li>      
+            <li class="planet-card">
+                <h2>Mars</h2>
+                <p>The "Red Planet," famous for its reddish appearance and iron oxide dust.</p>
+                <span class="type-label">Type: Terrestrial</span>
+            </li>         
+            <li class="planet-card">
+                <h2>Jupiter</h2>
+                <p>The largest planet in the Solar System, a massive gas giant.</p>
+                <span class="type-label">Type: Gas Giant</span>
+            </li>
+            <li class="planet-card">
+                <h2>Saturn</h2>
+                <p>Recognizable by its extensive and beautiful system of rings.</p>
+                <span class="type-label">Type: Gas Giant</span>
+            </li>
+            <li class="planet-card">
+                <h2>Uranus</h2>
+                <p>An ice giant that rotates on its side, unique among the planets.</p>
+                <span class="type-label">Type: Ice Giant</span>
+            </li>
+            <li class="planet-card">
+                <h2>Neptune</h2>
+                <p>The farthest known planet from the Sun and an ice giant.</p>
+                <span class="type-label">Type: Ice Giant</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

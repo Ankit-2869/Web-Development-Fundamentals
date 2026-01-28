@@ -1,0 +1,27 @@
+<!-- Create and invoke user-defined functions in JavaScript; use var, let, and const for scope demonstration -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>User-Defined Functions & Scope Demo</h3>
+<script>
+function greet(name) {
+    document.write("Hello, " + name + "<br>");
+}
+greet("Ankit");//calling function
+
+function scopeDemo() {
+    document.write("<br><b>Scope Demo:</b><br>");
+    if (true) {
+        var a = 10;   //function-scoped(global)
+        let b = 20;   // block-scoped
+        const c = 30; // block-scoped
+    }
+    document.write("var a = " + a + " (accessible)<br>");
+    document.write("let b and const c are NOT accessible outside the block<br>");
+}
+
+scopeDemo();
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!-- 8. Demonstrate the use of different CSS selectors (class, id, descendant, group, universal) -->
+<!DOCTYPE html>
+<head>
+    <title>About me</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        
+        .content-area {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #555555;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-align: center; 
+        }
+
+
+        #personal-intro {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border: 1px dashed #cccccc;
+            text-align: justify; 
+        }
+
+        .highlight {
+            color: darkgreen;
+            font-weight: 900;
+        }
+        
+        ul a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+
+        h1, h2, hr {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        
+        ul {
+            list-style-position: inside;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        li {
+            list-style-type: none; 
+            margin: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="content-area">
+
+        <p id="personal-intro">
+            <h1 class="highlight" style="text-align: center;"><b><u>About Me</u></b></h1>
+            Welcome to my personal page! Here you'll find details about me, <b class="highlight">Ankit Kumar</b>,<br> 
+            I've put together some of my favorite things for you to explore, including places I love,<br>
+            sports I follow, cars I admire, my go-to websites, and a list of my favorite actors.
+        </p>
+        
+        <hr>
+        <h2>Place to visit</h2>
+        <ul>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Garden_of_Caves.jpg" target="_blank">Garden Of Caves</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Wei_Sawdong_Waterfall_(6).jpg" target="_blank">Wei Sawdong Falls</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Living_Root_Bridges,_Meghalaya.jpg" target="_blank">Double Decker Living Root Bridge</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Arwah_Cave.jpg" target="_blank">Arwah Cave</a></li>
+        </ul>
+        
+        <hr>
+        <h2>Favorite Sports</h2>
+        <ul>
+            <li><img src="https://png.pngtree.com/png-vector/20250708/ourmid/pngtree-orange-basketball-png-image_16721120.webp" alt="Basketball Icon" height="100"> Basketball</li>
+            <li><img src="https://png.pngtree.com/png-clipart/20250104/original/pngtree-football-or-soccer-ball-on-transparent-background-png-image_20051333.png" alt="Football Icon" height="100"> Football</li>
+        </ul>
+        
+        <hr>
+        <h2>Favorite Cars</h2>
+        <ul>
+            <li><img src="https://mhQ89PiKHkl5rCkw&s" alt="Rolls-Royce" height="100"> Rolls-Royce</li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Bugatti_Logo.png" alt="Bugatti Logo" height="100"> Bugatti Veyron</li>
+        </ul>
+
+        <hr>
+        <h2>Favorite Actors & Actresses</h2>
+        <ul>
+            <li><img src="http_QL75_UX500_CR0,0,500,281_.jpg" alt="Manoj Bajpayee" width="150"> Manoj Bajpayee</li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Shahid_aunch_%28cropped%29.jpg" alt="Shahid Kapoor" height="100"> Shahid Kapoor</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdx2BNtIUa7pH8Q24v3YzKr56X3aHS79Slg&s" alt="Mrunal Thakur" height="100"> Mrunal Thakur</li>
+        </ul>
+
+        <hr>
+        <h2>Favorite Websites</h2>
+        <ul>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" height="50"> <a href="https://www.google.com" target="_blank">Google.com</a></li>
+            <li><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png" alt="Gemini" height="100"> <a href="https://gemini.google.com" target="_blank">Gemini</a></li>
+            <li><img src="https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg" alt="ChatGPT" height="100"> <a href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
+        </ul>
+    
+    </div>
+
+</body>
+</html>

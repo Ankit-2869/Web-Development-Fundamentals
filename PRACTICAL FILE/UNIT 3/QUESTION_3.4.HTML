@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Form Validation Using JavaScript Events</h3>
+<form onsubmit="return validateForm()">
+    Name: <input type="text" id="name" oninput="checkName()"><br><br>
+    Email: <input type="text" id="email" oninput="checkEmail()"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<p id="nameMsg" ></p>
+<p id="emailMsg" ></p>
+<script>
+function checkName() {
+    let name = document.getElementById("name").value;
+    let msg = document.getElementById("nameMsg");
+    if (name.length < 3) {
+        msg.textContent = "Name must be at least 3 characters.";
+    } else {
+        msg.textContent = "";
+    }
+}
+function checkEmail() {
+    let email = document.getElementById("email").value;
+    let msg = document.getElementById("emailMsg");
+    if (!email.includes("@") || !email.includes(".")) {
+        msg.textContent = "Enter a valid email.";
+    } else {
+        msg.textContent = "";
+    }
+}
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    if (name.length < 3) {
+        alert("Name is too short!");
+        return false;
+    }
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Invalid email!");
+        return false;
+    }
+    alert("Form submitted successfully!");
+    return true;
+
+    
+}
+</script>
+</body>
+</html>

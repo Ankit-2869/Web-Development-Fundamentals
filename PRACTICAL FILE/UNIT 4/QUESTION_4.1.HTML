@@ -1,0 +1,20 @@
+<!-- 
+Problem Statement:
+Demonstrate DOM manipulation using getElementById(), querySelector(), and innerHTML
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<p id="para">Original Text</p>
+<div class="box"></div>
+
+<script>
+    // getElementById
+    document.getElementById("para").innerHTML = "Text changed using getElementById";
+
+    // querySelector
+    document.querySelector(".box").innerHTML = "Text added using querySelector";
+</script>
+
+</body>
+</html>
